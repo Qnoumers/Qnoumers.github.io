@@ -3,9 +3,9 @@
 
 <div id="i" onclick="boom(this)"><p style="text-align:center; color:red;">O</p> </div>
 <script>
-  function boom(k){
-  alert(":O")
+function boom(k){
+  k.style.color:"white"
 }
 
 
-</script>
+</script>s
