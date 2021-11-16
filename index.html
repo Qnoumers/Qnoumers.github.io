@@ -24,7 +24,7 @@
  <p id="ape"style="font-family: 'Roboto', sans-serif;" >0<p>
  <button onclick="m()">banana go yes</button><br><br> 
  <button onclick="i()">more banana per clik(10$)</button> <br><br>
- <button style="marginal = 30px" onclick="i()">auto banana(30$)</button> 
+ <button style="marginal = 30px" onclick="eFunf(); autofunc()">auto banana(30$)</button> 
  <img src="banana.png" style="float:right; width: 50px">
  <br>
  <br>
@@ -34,6 +34,7 @@
  <script>
   let ape=1;
   let apus=1;
+  let auto=0;
   
   
  
@@ -51,6 +52,7 @@
      document.getElementById("ape").innerHTML = ape;
     
     }
+
     
   }
   function eFunf(){
@@ -62,7 +64,17 @@
 
     }
   }
+  
+   
+   
+   function autofunc(){
+    ape += auto;
+    document.getElementById("ape").innerHTML = ape;
+    setTimeout(autofunc, 1000);
 
+    }
+     
+  
   </script>   
   
  
