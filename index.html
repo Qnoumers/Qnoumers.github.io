@@ -20,12 +20,15 @@
 <p style="text-align:center; font-weight:normal; font-size:20px; padding-top:20px; font-family: 'Roboto', sans-serif; color:black">to the ultimate homepage of home pagus...<p>
 <br>
 <p style="text-align:center; font-weight:normal; font-size:20px; padding-top:20px; font-family: 'Roboto', sans-serif; color:black"> anyway, banena clicker geim<p>
+  <hr>
 </body>
  <p id="ape"style="font-family: 'Roboto', sans-serif;" >0<p>
  <button onclick="m()">banana go yes</button><br><br> 
  <button onclick="i()">more banana per clik(10$)</button> <br><br>
- <button style="marginal = 30px" onclick="eFunf(); autofunc()">auto banana(30$)</button> 
- <img src="banana.png" style="float:right; width: 50px">
+ <button style="marginal = 30px" onclick="eFunf(); autofunc()"> banana bush(30$)</button> 
+ <button style="marginal = 30px" onclick="eFunfn(); autofunc()">banana tree(150$)</button>
+ <button style="marginal = 30px" onclick="eFunfnn(); autofunc()">banana farm(1500$)</button>
+ <p style="text-align:right; font-weight:normal; font-size:30px; padding-top:20px; font-family: 'Roboto', sans-serif; color:black">banana<p><img src="banana2.png" style="float:right; width: 200px; "><img src="arrow2.png" style="float:right ; width:50px;">
  <br>
  <br>
  <br>
@@ -38,10 +41,10 @@
   
   
  
-  document.getElementById("ape").innerHTML = ape;
+  document.getElementById("ape").innerHTML = "your current banana balance:"+ape;
   function m(){
    
-    document.getElementById("ape").innerHTML = ape;
+    document.getElementById("ape").innerHTML = "your current banana balance:"+ape;
     ape+=apus;
    
   }
@@ -49,7 +52,7 @@
    if(ape >10){
      apus +=1;
      ape -=10;
-     document.getElementById("ape").innerHTML = ape;
+     document.getElementById("ape").innerHTML = "your current banana balance:"+ape;
     
     }
 
@@ -59,7 +62,25 @@
     if(ape> 30){
       auto+=1;
       ape -=30;
-      document.getElementById("ape").innerHTML = ape;
+      document.getElementById("ape").innerHTML = "your current banana balance:"+ape;
+
+
+    }
+  }
+  function eFunfn(){
+    if(ape> 150){
+      auto+=5;
+      ape -=150;
+      document.getElementById("ape").innerHTML = "your current banana balance:"+ape;
+
+
+    }
+  }
+  function eFunfnn(){
+    if(ape> 1500){
+      auto+=25;
+      ape -=1500;
+      document.getElementById("ape").innerHTML = "your current banana balance:"+ape;
 
 
     }
@@ -69,10 +90,11 @@
    
    function autofunc(){
     ape += auto;
-    document.getElementById("ape").innerHTML = ape;
+    document.getElementById("ape").innerHTML ="your current banana balance:"+ ape;
     setTimeout(autofunc, 1000);
 
     }
+    
      
   
   </script>   
