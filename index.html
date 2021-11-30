@@ -22,17 +22,19 @@
 <p style="text-align:center; font-weight:normal; font-size:20px; padding-top:20px; font-family: 'Roboto', sans-serif; color:black"> anyway, banena clicker geim<p>
   <hr>
 </body>
- <p id="ape"style="font-family: 'Roboto', sans-serif;" >0<p>
- <button onclick="m()">banana go yes</button><br><br> 
- <button onclick="i()">more banana per clik(10$)</button> <br><br>
- <button style="marginal = 30px" onclick="eFunf(); autofunc()"> banana bush(30$)</button> 
- <button style="marginal = 30px" onclick="eFunfn(); autofunc()">banana tree(150$)</button>
- <button style="marginal = 30px" onclick="eFunfnn(); autofunc()">banana farm(1500$)</button>
- <p style="text-align:right; font-weight:normal; font-size:30px; padding-top:20px; font-family: 'Roboto', sans-serif; color:black">banana<p><img src="banana2.png" style="float:right; width: 200px; "><img src="arrow2.png" style="float:right ; width:50px;">
- <br>
- <br>
- <br>
- <br>
+    <p id="ape"style="font-family: 'Roboto', sans-serif;" >0<p>
+    <img src="banana2.png" onclick="m(this)" style="width:200px; transition:0.1s;  " id="ad">
+    <br>
+
+    <button onclick="i()">more banana per clik(10$)</button> <br><br>
+    <button style="marginal = 30px" onclick="eFunf(); autofunc()"> banana bush(30$)</button> 
+    <button style="marginal = 30px" onclick="eFunfn(); autofunc()">banana tree(150$)</button>
+    <button style="marginal = 30px" onclick="eFunfnn(); autofunc()">banana farm(1500$)</button>
+    <p style="text-align:right; font-weight:normal; font-size:30px; padding-top:20px; font-family: 'Roboto', sans-serif; color:black">banana<p><img src="banana2.png" style="float:right; width: 200px; "><img src="arrow2.png" style="float:right ; width:50px;">
+    <br>
+    <br>
+    <br>
+    <br>
  
  <script>
   let ape=1;
@@ -42,11 +44,15 @@
   
  
   document.getElementById("ape").innerHTML = "your current banana balance:"+ape;
-  function m(){
+  function m(x){
    
     document.getElementById("ape").innerHTML = "your current banana balance:"+ape;
     ape+=apus;
-   
+    x.style.width= "210px"
+    setTimeout(waht, 100);
+  }
+  function waht(){
+    document.getElementById("ad").style.width = "200px";
   }
   function i(){
    if(ape >10){
