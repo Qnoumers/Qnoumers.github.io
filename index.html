@@ -30,6 +30,8 @@
     <button style="marginal = 30px" onclick="eFunf(); autofunc()"> banana bush(30$)</button> 
     <button style="marginal = 30px" onclick="eFunfn(); autofunc()">banana tree(150$)</button>
     <button style="marginal = 30px" onclick="eFunfnn(); autofunc()">banana farm(1500$)</button>
+    <button style="marginal = 30px" onclick="eFunfnnn(); autofunc()">banana factory(1 000 000$)</button>
+    <button style="marginal = 30px" onclick="milk(); autofunc()">banana Milck(69 000 000 000$)</button>
     <p style="text-align:right; font-weight:normal; font-size:30px; padding-top:20px; font-family: 'Roboto', sans-serif; color:black">banana<p><img src="banana2.png" style="float:right; width: 200px; "><img src="arrow2.png" style="float:right ; width:50px;">
     <br>
     <br>
@@ -86,6 +88,24 @@
     if(ape> 1500){
       auto+=25;
       ape -=1500;
+      document.getElementById("ape").innerHTML = "your current banana balance:"+ape;
+
+
+    }
+  }
+  function eFunfnnn(){
+    if(ape> 1000000){
+      auto+=1000;
+      ape -=1000000;
+      document.getElementById("ape").innerHTML = "your current banana balance:"+ape;
+
+
+    }
+  }
+  function milk(){
+    if(ape> 69000000){
+      auto+=1000;
+      ape -=69000000;
       document.getElementById("ape").innerHTML = "your current banana balance:"+ape;
 
 
